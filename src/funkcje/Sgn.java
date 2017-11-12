@@ -1,13 +1,13 @@
 package funkcje;
 
-import wyjątki.WyjątekONP;
+import wyjatki.WyjatekONP;
 
 /**
  * Znak +/-
  */
 public class Sgn extends Unary {
     @Override
-    public double obliczWartość() throws WyjątekONP {
+    public double obliczWartosc() throws WyjatekONP {
         sprArnosc();
         return Math.signum(argumenty[0]);
     }

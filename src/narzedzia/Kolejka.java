@@ -1,6 +1,6 @@
 package narzedzia;
 
-import wyjątki.ONP_PustaKolejka;
+import wyjatki.ONP_PustaKolejka;
 
 /**
  * Kolejka

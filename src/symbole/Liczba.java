@@ -1,7 +1,6 @@
 package symbole;
 
-import narzedzia.Lista;
-import wyjątki.WyjątekONP;
+import wyjatki.WyjatekONP;
 
 /**
  * Klasa Liczby przechowuje jej wartość
@@ -14,7 +13,7 @@ public class Liczba extends Operanda {
     }
 
     @Override
-    public double obliczWartość() throws WyjątekONP {
+    public double obliczWartosc() throws WyjatekONP {
         return value;
     }
 

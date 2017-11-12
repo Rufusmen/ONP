@@ -1,6 +1,6 @@
 package narzedzia;
 
-import wyjątki.ONP_PustyStos;
+import wyjatki.ONP_PustyStos;
 
 /**
  * Stos

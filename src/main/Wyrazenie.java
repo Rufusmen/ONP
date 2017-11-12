@@ -2,13 +2,11 @@ package main;
 
 import funkcje.Funkcja;
 import narzedzia.Kolejka;
-import narzedzia.Lista;
 import narzedzia.Stos;
 import symbole.Operanda;
 import symbole.Przypisanie;
 import symbole.Symbol;
-import symbole.Zmienna;
-import wyjątki.WyjątekONP;
+import wyjatki.WyjatekONP;
 
 import java.io.IOException;
 import java.util.logging.*;
@@ -69,19 +67,19 @@ public class Wyrazenie {
                     stos.pushBack(s);
                 } else if (s instanceof Funkcja) {
                     Funkcja f = (Funkcja) s;
-                    while (f.brakująceArgumenty() > 0) {
-                        f.dodajArgument(stos.getBack().obliczWartość());
+                    while (f.brakujaceArgumenty() > 0) {
+                        f.dodajArgument(stos.getBack().obliczWartosc());
                         stos.popBack();
                     }
                     stos.pushBack(f);
                 }
             }
-            Double wyn = new Double(stos.getBack().obliczWartość());
+            Double wyn = new Double(stos.getBack().obliczWartosc());
             logger.log(Level.INFO,"Wynik: " + wyn);
             return wyn;
-        } catch (WyjątekONP wyjątekONP) {
-            logger.log(Level.WARNING, "Błąd w obliczeniach " + wyjątekONP);
-            wyjątekONP.printStackTrace();
+        } catch (WyjatekONP wyjatekONP) {
+            logger.log(Level.WARNING, "Błąd w obliczeniach " + wyjatekONP);
+            wyjatekONP.printStackTrace();
         }
         return null;
     }

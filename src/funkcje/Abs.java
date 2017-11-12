@@ -1,6 +1,6 @@
 package funkcje;
 
-import wyjątki.WyjątekONP;
+import wyjatki.WyjatekONP;
 
 /**
  * Wartość bezwzględna
@@ -8,7 +8,7 @@ import wyjątki.WyjątekONP;
 public class Abs extends Unary {
 
     @Override
-    public double obliczWartość() throws WyjątekONP {
+    public double obliczWartosc() throws WyjatekONP {
         sprArnosc();
         return Math.abs(argumenty[0]);
     }

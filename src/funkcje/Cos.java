@@ -1,13 +1,13 @@
 package funkcje;
 
-import wyjątki.WyjątekONP;
+import wyjatki.WyjatekONP;
 
 /**
  * Cosinus
  */
 public class Cos extends Unary {
     @Override
-    public double obliczWartość() throws WyjątekONP {
+    public double obliczWartosc() throws WyjatekONP {
         sprArnosc();
         return Math.cos(argumenty[0]);
     }

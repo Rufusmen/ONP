@@ -1,6 +1,6 @@
 package interfejsy;
 
-import wyjątki.WyjątekONP;
+import wyjatki.WyjatekONP;
 
 /**
  * interfejs obliczalny
@@ -9,7 +9,7 @@ public interface Obliczalny {
     /**
      *
      * @return obliczona wartość
-     * @throws WyjątekONP
+     * @throws WyjatekONP
      */
-    double obliczWartość () throws WyjątekONP;
+    double obliczWartosc() throws WyjatekONP;
 }

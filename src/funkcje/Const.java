@@ -1,6 +1,6 @@
 package funkcje;
 
-import wyjątki.WyjątekONP;
+import wyjatki.WyjatekONP;
 
 /**
  * Klasa Stałych
@@ -14,7 +14,7 @@ abstract public class Const extends Funkcja {
 
 
     @Override
-    public double obliczWartość() throws WyjątekONP {
+    public double obliczWartosc() throws WyjatekONP {
         return argumenty[0];
     }
 }

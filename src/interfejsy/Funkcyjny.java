@@ -1,6 +1,6 @@
 package interfejsy;
 
-import wyjątki.WyjątekONP;
+import wyjatki.WyjatekONP;
 
 /**
  * interfejs funkcji
@@ -9,20 +9,20 @@ public interface Funkcyjny extends Obliczalny {
     /**
      *
      * @return arność funkcji
-     * @throws WyjątekONP
+     * @throws WyjatekONP
      */
-    int arnosc () throws WyjątekONP;
+    int arnosc () throws WyjatekONP;
 
     /**
      *
      * @return ilość brakujących elementów
      */
-    int brakująceArgumenty ();
+    int brakujaceArgumenty();
 
     /**
      * Dodaje argument
      * @param arg dodawany argument
-     * @throws WyjątekONP
+     * @throws WyjatekONP
      */
-    void dodajArgument (double arg) throws WyjątekONP;
+    void dodajArgument (double arg) throws WyjatekONP;
 }

@@ -1,8 +1,8 @@
 package symbole;
 
 import narzedzia.*;
-import wyjątki.ONP_BłądZmiennej;
-import wyjątki.WyjątekONP;
+import wyjatki.ONP_BladZmiennej;
+import wyjatki.WyjatekONP;
 
 /**
  * Klaza zmiennej
@@ -50,10 +50,10 @@ public class Zmienna extends Operanda {
     }
 
     @Override
-    public double obliczWartość() throws WyjątekONP {
+    public double obliczWartosc() throws WyjatekONP {
         Node<Para<String, Double>> node = lista.find(key);
         if (node.getValue() == null || node.getValue().getValue() == null) {
-            throw new ONP_BłądZmiennej();
+            throw new ONP_BladZmiennej();
         }
         return node.getValue().getValue();
     }

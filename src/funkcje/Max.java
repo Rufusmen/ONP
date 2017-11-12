@@ -1,13 +1,13 @@
 package funkcje;
 
-import wyjątki.WyjątekONP;
+import wyjatki.WyjatekONP;
 
 /**
  * Maximum
  */
 public class Max extends Binary {
     @Override
-    public double obliczWartość() throws WyjątekONP {
+    public double obliczWartosc() throws WyjatekONP {
         sprArnosc();
         return Math.max(argumenty[0],argumenty[1]);
     }

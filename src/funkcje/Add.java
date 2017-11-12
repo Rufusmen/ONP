@@ -1,13 +1,13 @@
 package funkcje;
 
-import wyjątki.WyjątekONP;
+import wyjatki.WyjatekONP;
 
 /**
  * Dodawanie
  */
 public class Add extends Binary {
     @Override
-    public double obliczWartość() throws WyjątekONP {
+    public double obliczWartosc() throws WyjatekONP {
         sprArnosc();
         return argumenty[0] + argumenty[1];
     }

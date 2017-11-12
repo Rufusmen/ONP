@@ -1,14 +1,14 @@
 package funkcje;
 
-import wyjątki.ONP_DzieleniePrzez0;
-import wyjątki.WyjątekONP;
+import wyjatki.ONP_DzieleniePrzez0;
+import wyjatki.WyjatekONP;
 
 /**
  * Dzielenie
  */
 public class Div extends Binary {
     @Override
-    public double obliczWartość() throws WyjątekONP {
+    public double obliczWartosc() throws WyjatekONP {
         sprArnosc();
         if(argumenty[0] == 0.0) throw new ONP_DzieleniePrzez0();
         return argumenty[1]/argumenty[0];

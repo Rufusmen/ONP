@@ -1,6 +1,6 @@
 package funkcje;
 
-import wyjątki.WyjątekONP;
+import wyjatki.WyjatekONP;
 
 /**
  * Potęga
@@ -8,7 +8,7 @@ import wyjątki.WyjątekONP;
 public class Pow extends Binary {
 
     @Override
-    public double obliczWartość() throws WyjątekONP {
+    public double obliczWartosc() throws WyjatekONP {
         sprArnosc();
         return Math.pow(argumenty[1],argumenty[0]);
     }

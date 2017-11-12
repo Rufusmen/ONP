@@ -1,34 +1,34 @@
 package symbole;
 
 import narzedzia.Stos;
-import wyjątki.ONP_BłądZmiennej;
-import wyjątki.WyjątekONP;
+import wyjatki.ONP_BladZmiennej;
+import wyjatki.WyjatekONP;
 
 /**
  * Klasa przypisania
  */
 public class Przypisanie extends Symbol {
 
-    public static void przypisz(Stos<Symbol> stos) throws WyjątekONP{
+    public static void przypisz(Stos<Symbol> stos) throws WyjatekONP {
         Symbol s1 = stos.getBack();
         stos.popBack();
         Symbol s2 = stos.getBack();
         stos.popBack();
 
         if(s2 instanceof Zmienna){
-            ((Zmienna)s2).ustaw(s1.obliczWartość());
-            stos.pushBack(new Liczba(s1.obliczWartość()));
+            ((Zmienna)s2).ustaw(s1.obliczWartosc());
+            stos.pushBack(new Liczba(s1.obliczWartosc()));
         }
         else if (s1 instanceof Zmienna){
-            ((Zmienna)s1).ustaw(s2.obliczWartość());
-            stos.pushBack(new Liczba(s2.obliczWartość()));
+            ((Zmienna)s1).ustaw(s2.obliczWartosc());
+            stos.pushBack(new Liczba(s2.obliczWartosc()));
         }
-        else throw new ONP_BłądZmiennej();
+        else throw new ONP_BladZmiennej();
     }
 
 
     @Override
-    public double obliczWartość() throws WyjątekONP {
+    public double obliczWartosc() throws WyjatekONP {
         throw new UnsupportedOperationException("");
     }
 }

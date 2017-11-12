@@ -1,5 +1,6 @@
 /**
- * @author Rufus
+ *
  * Pakiet zawiera wyjątki wykorzystane w interaktywnym kalkulatorze ONP
+ * @author Rufus
  */
-package wyjątki;
+package wyjatki;
