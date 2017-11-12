@@ -23,3 +23,35 @@ lis 12, 2017 2:58:36 PM main.Wyrazenie <init>
 INFO: Nowe wyrażenie: Pi E +
 lis 12, 2017 2:58:36 PM main.Wyrazenie oblicz
 INFO: Wynik: 5.859874482048838
+lis 12, 2017 3:52:43 PM main.Wyrazenie <init>
+INFO: Nowe wyrażenie: 2 2 +
+lis 12, 2017 3:52:43 PM main.Wyrazenie oblicz
+INFO: Wynik: 4.0
+lis 12, 2017 3:53:20 PM main.Wyrazenie <init>
+INFO: Nowe wyrażenie: 2 2 2 +
+lis 12, 2017 3:53:20 PM main.Wyrazenie oblicz
+INFO: Wynik: 4.0
+lis 12, 2017 3:57:56 PM main.Wyrazenie <init>
+INFO: Nowe wyrażenie: 2 2 +
+lis 12, 2017 3:57:56 PM main.Wyrazenie oblicz
+INFO: Wynik: 4.0
+lis 12, 2017 3:59:43 PM main.Wyrazenie <init>
+INFO: Nowe wyrażenie: 2 2 2 +
+lis 12, 2017 3:59:43 PM main.Wyrazenie oblicz
+WARNING: Błąd w obliczeniach wyjatki.ONP_ZaDuzoArgumentow
+lis 12, 2017 3:59:52 PM main.Wyrazenie <init>
+INFO: Nowe wyrażenie: 2 2 +
+lis 12, 2017 3:59:52 PM main.Wyrazenie oblicz
+INFO: Wynik: 4.0
+lis 12, 2017 3:59:57 PM main.Wyrazenie <init>
+INFO: Nowe wyrażenie: 2 2 +
+lis 12, 2017 3:59:57 PM main.Wyrazenie oblicz
+INFO: Wynik: 4.0
+lis 12, 2017 4:00:10 PM main.Wyrazenie <init>
+INFO: Nowe wyrażenie: 2 2 2 +
+lis 12, 2017 4:00:10 PM main.Wyrazenie oblicz
+WARNING: Błąd w obliczeniach wyjatki.ONP_ZaDuzoArgumentow
+lis 12, 2017 4:00:25 PM main.Wyrazenie <init>
+INFO: Nowe wyrażenie: 1 1 1 1 1 + * + *
+lis 12, 2017 4:00:25 PM main.Wyrazenie oblicz
+INFO: Wynik: 3.0

@@ -6,6 +6,7 @@ import narzedzia.Stos;
 import symbole.Operanda;
 import symbole.Przypisanie;
 import symbole.Symbol;
+import wyjatki.ONP_ZaDuzoArgumentow;
 import wyjatki.WyjatekONP;
 
 import java.io.IOException;
@@ -74,9 +75,17 @@ public class Wyrazenie {
                     stos.pushBack(f);
                 }
             }
-            Double wyn = new Double(stos.getBack().obliczWartosc());
-            logger.log(Level.INFO,"Wynik: " + wyn);
-            return wyn;
+            Double wyn = stos.getBack().obliczWartosc();
+            stos.popBack();
+            if(stos.empty()) {
+                logger.log(Level.INFO, "Wynik: " + wyn);
+                return wyn;
+            }
+            else {
+                ONP_ZaDuzoArgumentow w = new ONP_ZaDuzoArgumentow();
+                logger.log(Level.WARNING, "Błąd w obliczeniach " + w);
+                return null;
+            }
         } catch (WyjatekONP wyjatekONP) {
             logger.log(Level.WARNING, "Błąd w obliczeniach " + wyjatekONP);
             wyjatekONP.printStackTrace();
