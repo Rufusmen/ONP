@@ -1,0 +1,25 @@
+lis 12, 2017 2:50:24 PM main.Wyrazenie <init>
+INFO:  5 r =
+lis 12, 2017 2:50:25 PM main.Wyrazenie oblicz
+INFO: Wynik: 5.0
+lis 12, 2017 2:51:07 PM main.Wyrazenie <init>
+INFO:  5 5 +
+lis 12, 2017 2:51:07 PM main.Wyrazenie oblicz
+INFO: Wynik: 10.0
+lis 12, 2017 2:56:05 PM main.Wyrazenie <init>
+INFO: Nowe wyrażenie: 2 3 4 5 + + +
+lis 12, 2017 2:56:05 PM main.Wyrazenie oblicz
+INFO: Wynik: 14.0
+lis 12, 2017 2:56:59 PM main.Wyrazenie <init>
+INFO: Nowe wyrażenie: 2 +
+lis 12, 2017 2:56:59 PM main.Wyrazenie oblicz
+WARNING: Błąd w obliczeniach
+wyjątki.ONP_PustyStos
+lis 12, 2017 2:58:28 PM main.Wyrazenie <init>
+INFO: Nowe wyrażenie: 5 4 +
+lis 12, 2017 2:58:28 PM main.Wyrazenie oblicz
+INFO: Wynik: 9.0
+lis 12, 2017 2:58:36 PM main.Wyrazenie <init>
+INFO: Nowe wyrażenie: Pi E +
+lis 12, 2017 2:58:36 PM main.Wyrazenie oblicz
+INFO: Wynik: 5.859874482048838
