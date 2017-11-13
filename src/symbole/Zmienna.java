@@ -29,6 +29,7 @@ public class Zmienna extends Operanda {
      * @param key nazwa zmiennej
      * @param value jej wartość
      */
+    @Deprecated
     public static void ustaw(String key, Double value) {
         lista.add(key, value);
     }
